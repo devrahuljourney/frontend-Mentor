@@ -141,6 +141,7 @@
   }
   .butt:hover {
     background:  linear-gradient(to bottom right,var(--Lightslateblue),var(--Lightroyalblue));
+    cursor: pointer;
  
   }
   @media only screen and (max-width: 375px)
