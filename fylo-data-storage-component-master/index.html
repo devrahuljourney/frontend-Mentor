@@ -7,25 +7,79 @@
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   
   <title>Frontend Mentor | Fylo data storage component</title>
+  <script src="https://cdn.tailwindcss.com"></script>
 
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
   <style>
+    @import url('https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@200&family=Raleway&display=swap');
     .attribution { font-size: 11px; text-align: center; }
     .attribution a { color: hsl(228, 45%, 44%); }
+    :root{
+      --Gradient: hsl(6, 100%, 80%) to hsl(335, 100%, 65%);
+      --PaleBlue: hsl(243, 100%, 93%);
+      --GrayishBlue: hsl(229, 7%, 55%);
+      --DarkBlue: hsl(228, 56%, 26%);
+      --VeryDarkBlue: hsl(229, 57%, 11%);
+    }
+    *{
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Barlow Semi Condensed', sans-serif;
+      font-family: 'Raleway', sans-serif;
+    }
+    .round{
+      background-color: var(--DarkBlue);
+    }
+    .rectangle{
+      background-color: var(--DarkBlue);
+    }
+    .container{
+      background-image: url(./images/bg-desktop.png);
+      background-size: cover;
+      background-repeat: no-repeat;
+    }
+    p{
+      color: #ffffff;
+    }
+    .line{
+      background-color: var(--VeryDarkBlue);
+    }
+    .level{
+      background: linear-gradient(to right,hsl(6, 100%, 80%) to hsl(335, 100%, 65%) );
+    }
   </style>
 </head>
 <body>
-
-  You’ve used 815 GB of your storage
-
-  185 GB Left
-  
-  0 GB
-  1000 GB
-  
+     <div class="container flex w-full flex-col lg:flex-row justify-center items-center gap-[10px] mx-auto p-[120px] ">
+       <div class="round p-4 rounded-tr-[70px] flex flex-col gap-4">
+        <div class="text">
+          <img src="./images/logo.svg" alt="logo">
+        </div>
+        <div class="icon flex gap-4">
+          <img src="./images/icon-document.svg" alt="image">
+          <img src="./images/icon-folder.svg" alt="image">
+          <img src="./images/icon-upload.svg" alt="image">
+        </div>
+       </div>
+       <div class="rectangle  p-4">
+        <div class="space">185 GB Left</div>
+        <div class="data flex flex-col">
+          <p> You’ve used 815 GB of your storage</p>
+          <div class="line w-64 h-3 rounded-full relative ">
+             <div class="level w- h-full rounded-full"></div>
+             <div class="point"></div>
+          </div>
+          <div class="line-data">
+            <p>0 GB</p>
+            <p>1000 GB</p>
+          </div>
+        </div>
+       </div>
+     </div>
   <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
+    Coded by <a href="#">Rahul kumar verma</a>.
   </div>
 </body>
 </html>
