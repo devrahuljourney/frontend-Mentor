@@ -5,16 +5,34 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  <link rel="stylesheet" href="main.css">
+  <!-- <link rel="stylesheet" href="style.css"> -->
   <link rel="stylesheet" href="font.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-  
+  <script src="https://cdn.tailwindcss.com"></script>
   <title>Frontend Mentor | Clipboard landing page</title>
 
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
   <style>
+    /* @tailwind base;
+    @tailwind components;
+    @tailwind utilities; */
     .attribution { font-size: 11px; text-align: center; }
     .attribution a { color: hsl(228, 45%, 44%); }
+    .icon a:hover{
+      color: aqua;
+    }
+    .ios{
+      background-color: hsl(171, 66%, 44%);
+    }
+    .mac{
+      background-color: hsl(233, 100%, 69%);
+    }
+    p{
+       color: hsl(201, 11%, 66%);
+    }
+    h1{
+      color: hsl(210, 10%, 33%);
+    }
   </style>
 </head>
 <body>
@@ -29,8 +47,8 @@
             copy. Instantly access your clipboard on all your devices.</p>
         </div>
         <div class="btn flex lg:flex-row flex-col  gap-6 ">
-          <a class="w-[170px] h-[40px] shadow-sm shadow-black bg-strong-cyan  flex justify-center items-center rounded-[20px] text-white"  href="#" class="ios"> Download for iOS</a>
-          <a class="w-[170px] h-[40px] bg-light-blue hadow-sm shadow-sm  shadow-black flex justify-center items-center rounded-[20px] text-white" href="#" class="mac">Download for Mac</a>
+          <a class="ios w-[170px] h-[40px] shadow-sm shadow-black bg-strong-cyan  flex justify-center items-center rounded-[20px] text-white"  href="#" class="ios"> Download for iOS</a>
+          <a class="mac w-[170px] h-[40px] bg-light-blue hadow-sm shadow-sm  shadow-black flex justify-center items-center rounded-[20px] text-white" href="#" class="mac">Download for Mac</a>
         </div>
       </div>
 
@@ -114,8 +132,8 @@
           and you’re ready to start adding to your clipboard.</p>
      
       <div class="btn flex flex-col lg:flex-row gap-6 ">
-        <a class="w-[170px] h-[40px] shadow-sm shadow-black bg-strong-cyan  flex justify-center items-center rounded-[20px] text-white"  href="#" class="ios"> Download for iOS</a>
-        <a class="w-[170px] h-[40px] bg-light-blue hadow-sm shadow-sm  shadow-black flex justify-center items-center rounded-[20px] text-white" href="#" class="mac">Download for Mac</a>
+        <a class="ios w-[170px] h-[40px] shadow-sm shadow-black bg-strong-cyan  flex justify-center items-center rounded-[20px] text-white"  href="#" class="ios"> Download for iOS</a>
+        <a class="mac w-[170px] h-[40px] bg-light-blue hadow-sm shadow-sm  shadow-black flex justify-center items-center rounded-[20px] text-white" href="#" class="mac">Download for Mac</a>
       </div>
     </div>
 
