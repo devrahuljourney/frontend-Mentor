@@ -1,0 +1,51 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@200&family=Raleway&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@200&family=Raleway&display=swap');
+:root{
+    --Pink: hsl(322, 100%, 66%);
+    --VeryPaleCyan: hsl(193, 100%, 96%);
+    --VeryDarkCyan: hsl(192, 100%, 9%);
+    --GrayishBlue: hsl(208, 11%, 55%);
+}
+.conatainer{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Barlow Semi Condensed', sans-serif;
+font-family: 'Raleway', sans-serif;
+}
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
+.try-it-free{
+    box-shadow: .2px 5px 20px 2px  #d1cccc
+}
+h1{
+    font-family: 'Barlow Semi Condensed', sans-serif;
+    font-family: 'Raleway', sans-serif;
+    font-size: 2rem;
+    font-weight: 600;
+}
+p{
+    color: var( --GrayishBlue);
+    font-size: 18px;
+}
+.btn{
+    background-color: var(--Pink);
+    color: #ffffff;
+}
+.footer-items{
+    background-color: var(--VeryDarkCyan);
+    color: #ffffff;
+}
+.footer-items p {
+    color: #ffffff;
+}
+.box{
+    background-color: #ffffff;
+}
+.logo h1{
+    color: #ffffff;
+    font-size: 3rem;
+}
+.box h1{
+    color: #000000;
+}
