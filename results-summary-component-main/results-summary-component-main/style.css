@@ -1,0 +1,160 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@500&display=swap');
+:root{
+    --Lightred: hsl(0, 100%, 67%);
+    --Orangeyyellow: hsl(39, 100%, 56%);
+    --Greenteal: hsl(166, 100%, 37%);
+    --Cobaltblue: hsl(234, 85%, 45%);
+--Lightslateblue: hsl(252, 100%, 67%);;
+--Lightroyalblue: hsl(241, 81%, 54%);
+    --Violetblue : hsla(256, 72%, 46%, 1);
+    --Persianblue: hsla(241, 72%, 46%, 0);
+--White: hsl(0, 0%, 100%);
+--Paleblue: hsl(221, 100%, 96%);
+--Lightlavender: hsl(241, 100%, 89%);
+--Darkgrayblue: hsl(224, 30%, 27%) ;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container{
+    height: 700px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.card{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 60px;
+}
+.c {
+    width: 60%;
+    height: 450px;
+    border-radius: 25px;
+    font-family: 'Ubuntu', sans-serif;
+  }
+  .card1{
+    background: linear-gradient(to bottom right,var(--Lightslateblue),var(--Lightroyalblue));
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+  }
+  .p1{
+    color: var(--Lightlavender);
+    font-size: 18px;
+  }
+  .circle{
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    background: linear-gradient(to bottom, var(--Violetblue), var(--Persianblue) );
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .cmark{
+    color: var(--White);
+    font-size: 50px;
+  }
+  .pcircle{
+    color: var(--Lightlavender);
+    font-size: 15px;
+  }
+  .p2{
+    color: var(--White);
+    font-size: 22px;
+  }
+  .p3{
+    color: var(--Lightlavender);
+    font-size: 14px;
+    text-align: center;
+  }
+  .card2{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-content: space-evenly;
+    width: 60%;
+  }
+  .svg{
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    justify-content: space-evenly;
+    justify-content: center;
+  }
+  .svg-attribute{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+  .svg-name{
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+  }
+  .mark{
+    color: var(--Darkgrayblue);
+    font-size: 15px;
+  }
+  .svg-name p {
+    font-size: 13px;
+  }
+  .react{
+    color: var(--Lightred);
+    
+  }
+  .mem{
+    color: var(--Orangeyyellow);
+  }
+  .ver{
+    color: var(--Greenteal);
+  }
+  .vis{
+    color: var(--Cobaltblue);
+  }
+  h1 {
+    font-size: 18px;
+    color: var(--Darkgrayblue);
+  }
+  .butt{
+    background-color: var(--Darkgrayblue);
+    height: 40px;
+    width: 100%;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   
+  }
+ .butt a {
+    text-decoration: none;
+    text-align: center;
+    color: var(--Lightlavender);
+  }
+  .butt:hover {
+    background:  linear-gradient(to bottom right,var(--Lightslateblue),var(--Lightroyalblue));
+    cursor: pointer;
+ 
+  }
+  @media only screen and (max-width: 375px)
+  {
+    .card{
+        display: flex;
+        flex-direction: column;
+    }
+    .c{
+        width: 100%;
+    }
+    .attribution{
+        margin-top: 40%;
+      }
+  }
+  

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <title>Frontend Mentor | Newsletter sign-up form with success message</title>
+  <link rel="stylesheet" href="style.css">
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(0, 0%, 97%); }
+  </style>
+</head>
+<body>
+
+  <!-- Sign-up form start -->
+
+  <div class="container rounded-2xl sm:gap-2 gap-4  flex sm:flex-row flex-col-reverse sm:w-[60%] w-full sm:p-10 sm:mt-20 mt-[-25%] sm:mx-auto justify-between items-center">
+    <div class="left flex flex-col justify-center gap-5 items-start sm:p-0 p-6">
+      <h1 class="text-[2.2rem] font-bold">Stay updated  !</h1>
+      <p class="text-[18px]">Join 60,000+ product managers receiving monthly updates on:</p>
+      <div class="list flex flex-col ">
+        <li>Product discovery and building what matters</li>
+        <li>  Measuring to ensure updates are a success</li>
+        <li> And much more!</li>
+      </div>
+      <div class="result"></div>
+
+      <div class="email w-full flex flex-col gap-2 items-start ">
+        <p class="text-[12px] font-bold">Email address</p>
+        <input class=" email-input border-[2px] border-[#d0cece] rounded-lg w-[100%] p-4 h-[55px]" type="email" name="" placeholder="email@company.com" required id="">
+      </div>
+      <div class="sub-btn ">
+        <button class="btn  h-[70px] p-4 text-[20px] " onclick="openModal()" class="btn sub-btn">  Subscribe to monthly newsletter</button>
+      </div>
+    </div>
+    <div class="right">
+      <img src="./assets/images/illustration-sign-up-desktop.svg" alt="">
+    </div>
+    
+  </div>
+  <div class="suc-msg hidden container rounded-2xl  flex gap-4 flex-col  p-10 mt-20 mx-auto justify-center sm:w-[40%] w-full sm:h-[40%] h-[100vh] items-center ">
+    <img src="./assets/images/icon-success.svg" alt="">
+    <h1 class="text-[2.2rem] font-bold">Thanks for subscribing!</h1>
+    <p class="text-[18px]">A confirmation email has been sent to <b>ash@loremcompany.com.</b> 
+      Please open it and click the button inside to confirm your subscription.</p>
+      <div class="sub-btn sm:mt-0 mt-6 w-full">
+        <button class="btn  p-4">  
+          Dismiss message</button>
+      </div>
+  </div>
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="https://www.linkedin.com/in/rkvrahul/">Rahul Kumar Verma</a>.
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>

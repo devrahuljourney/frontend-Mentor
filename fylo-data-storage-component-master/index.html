@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Fylo data storage component</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@200&family=Raleway&display=swap');
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+    :root{
+      --Gradient: hsl(6, 100%, 80%) to hsl(335, 100%, 65%);
+      --PaleBlue: hsl(243, 100%, 93%);
+      --GrayishBlue: hsl(229, 7%, 55%);
+      --DarkBlue: hsl(228, 56%, 26%);
+      --VeryDarkBlue: hsl(229, 57%, 11%);
+    }
+    *{
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Barlow Semi Condensed', sans-serif;
+      font-family: 'Raleway', sans-serif;
+    }
+    .round{
+      background-color: var(--DarkBlue);
+    }
+    .rectangle{
+      background-color: var(--DarkBlue);
+    }
+    .container{
+      background-image: url(./images/bg-desktop.png);
+      background-size: cover;
+      background-repeat: no-repeat;
+    }
+    p{
+      color: #ffffff;
+    }
+    .line{
+      background-color: var(--VeryDarkBlue);
+    }
+    .level{
+      background-color: hsl(335, 100%, 65%);
+      color: aqua;
+    }
+    .point{
+      background-color: white;
+    }
+    .box{
+       background-color: #ffffff;
+       width: 120px;
+       height: 50px;
+       position: relative;
+       left: 50%;
+       top: -40px;
+       padding: 4px;
+       text-align: center;
+       border-radius: 10px;
+    }
+    .box::after{
+      position: absolute;
+      content: "";
+      /* background-color: #ffffff; */
+     
+      height: 30px;
+      width: 30px;
+      right: 11px;
+      transform: rotate(45deg);
+      border-bottom: 20px solid #ffffff;
+      border-right: 10px solid #ffffff;
+
+    }
+    .img {
+      width: 40px;
+      height: 40px;
+      background-color: var(--VeryDarkBlue);
+      padding: 8px;
+      border-radius: 10px;
+    }
+    @media only screen and (max-width: 640px)
+    {
+      .container{
+      background-image: url(./images/bg-mobile.png);
+      background-size: cover;
+      background-repeat: no-repeat;
+      
+    }
+    .box{
+       background-color: #ffffff;
+       width: 100px;
+       height: 40px;
+       position: absolute;
+       padding: 4px;
+       text-align: center;
+       top: 44%;
+       left: 38%;
+       border-radius: 10px;
+    }
+    .box::after{
+      position: absolute;
+      content: "";
+      /* background-color: #ffffff; */
+     
+      height: 30;
+      width: 0;
+      right: 0;
+      transform: rotate(45deg);
+      border-bottom: 0 solid #ffffff;
+      border-right: 0 solid #ffffff;
+
+    }
+    }
+  </style>
+</head>
+<body>
+     <div class="container flex w-full flex-col lg:flex-row justify-center items-center gap-[30px] mx-auto lg:p-[120px] p-[40px] ">
+       <div class="round p-5 rounded-tr-[70px] flex flex-col gap-4 w-[50%] lg:w-[25%] h-[150px]">
+        <div class="text">
+          <img src="./images/logo.svg" alt="logo">
+        </div>
+        <div class="icon flex gap-4 ml-2">
+          <img class="img " src="./images/icon-document.svg" alt="image">
+          <img class="img " src="./images/icon-folder.svg" alt="image">
+          <img class="img " src="./images/icon-upload.svg" alt="image">
+        </div>
+       </div>
+       <div class="rectangle  p-4 w-1/2 ">
+       <div class="box">
+        <div class="space text-[hsl(229, 7%, 55%)] text-[14px]"><span class="text-[20px] text-[#000000] font-bold">185</span> GB Left</div>
+       </div>
+        <div class="data flex flex-col gap-3">
+          <p> You’ve used 815 GB of your storage</p>
+          <div class="line w-[100%] h-3  rounded-full relative">
+            <div class="level w-[70%] h-full  rounded-full"></div>
+            <div class="point w-2 h-2  rounded-full absolute top-1/2 left-[70%] transform -translate-x-1/2 -translate-y-1/2"></div>
+          </div>
+          
+          <div class="line-data flex justify-between">
+            <p>0 GB</p>
+            <p>1000 GB</p>
+          </div>
+        </div>
+       </div>
+     </div>
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="https://www.linkedin.com/in/rkvrahul/">Rahul kumar verma</a>.
+  </div>
+</body>
+</html>

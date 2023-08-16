@@ -1,0 +1,32 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+:root{
+    --Tomato: hsl(4, 100%, 67%);
+    --DarkSlateGrey: hsl(234, 29%, 20%);
+    --CharcoalGrey: hsl(235, 18%, 26%);
+    --Grey: hsl(231, 7%, 60%);
+    --White: hsl(0, 0%, 100%);
+}
+body{
+    font-family: 'Roboto', sans-serif;
+    background-color: var(--DarkSlateGrey);
+}
+.container,.suc-msg{
+    background-color: var(--White);
+}
+h1{
+    color: var(--DarkSlateGrey);
+}
+p{
+    color: var(--CharcoalGrey);
+}
+li {
+    list-style-image: url(./assets/images/icon-list.svg);
+}
+.btn{
+    background-color: var(--DarkSlateGrey);
+    color: var(--White);
+    border-radius: 20px;
+}
+.btn:hover{
+    background-color: var(--Tomato);
+}
